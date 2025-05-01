@@ -28,7 +28,7 @@ jobs:
         run: mkdir -p testResults
       
       - name: Run API Tests
-        run: newman run newman run "Restful Booker BVT.postman_collection.json" -e Production.postman_environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html
+        run: newman run "Restful Booker BVT.postman_collection.json" -e Production.postman_environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html
 
     # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
